@@ -1,0 +1,136 @@
+p {
+  font-size: 12pt; 
+}
+
+.preview-alignment {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  position: relative; 
+}
+
+.preview {
+  margin-top: 5em; 
+  flex-shrink: 0; 
+  width: 8.5in;
+  height: 11in; 
+  border: 1px solid #cccccc;
+  padding: 0.5in;
+  overflow: auto; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, Helvetica, sans-serif;
+  transform-origin: top;
+  transform: scale(0.45);
+}
+
+.preview__button--back {
+  display: inline-block; 
+  position: sticky; 
+  bottom: 2em;
+  left: 80%;
+  background-color: var(--main-color-transparent);
+  border-radius: 50%;
+}
+
+.preview__button--back:hover, 
+.preview__button--back:active {
+  opacity: 0.7; 
+  transition: 0.3s; 
+}
+
+.preview__button--back:active {
+  transform: scale(0.95);
+}
+
+.svg-x {
+  stroke: white; 
+  width: 24px; 
+  height: auto; 
+}
+
+.preview__name {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;  
+  text-transform: uppercase; 
+  font-weight: bold;
+  font-size: 26pt; 
+}
+
+.preview__contact {
+  padding-top: 1.5em; 
+  display: flex;
+  justify-content: center; 
+  font-size: 11pt;
+}
+
+.preview__contact--ph span, 
+.preview__contact--email span  {
+  margin-left: 0.25em; 
+}
+
+.preview__contact--separator {
+  margin: 0 1em; 
+}
+
+.preview__experience, 
+.preview__education {
+  margin-top: 28px;
+}
+  
+.preview__separator {
+  width: 100%;
+  border-top: solid 1px gray;
+}
+
+.preview__section--title {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase; 
+  font-weight: bold; 
+  color: dimgray;
+  font-size: 14pt; 
+  padding-bottom: 1.125em; 
+  padding-top: 1.75em;
+}
+
+.preview__details {
+  padding-top: 0.75em; 
+  line-height: 1.5;
+  font-size: 12pt; 
+  margin: 0 24pt; 
+}
+
+.preview h3 {
+  font-size: 12pt; 
+  justify-content: space-between;
+}
+
+.preview__experience--container + .preview__experience--container, 
+.preview__education--container + .preview__education--container {
+  margin-top: 1em;
+}
+
+.preview__experience--heading, 
+.preview__education--heading {
+  line-height: 1.3;
+}
+
+.preview__experience--company, 
+.preview__education--school {
+  opacity: 0.7; 
+}
+
+.preview__details {
+  white-space: pre-line;
+}
+
+@media (min-width: 750px) {
+  
+  .preview {
+    transform: none;
+  }
+
+  .svg-x {
+    width: 36px;
+  }
+  
+}

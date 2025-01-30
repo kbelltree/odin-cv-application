@@ -1,0 +1,50 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+  --main-color: #272643;
+  --main-color-transparent: rgba(39, 38, 67, 0.73);
+  --secondary-color: #2c698c;
+  --base-color: rgba(44, 105, 140, .3);
+  --text-muted-color: #424656;
+  --accent-color: #bae8e8;
+  --accent-color-light: #ddf4f4;
+
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+h2, 
+h3, 
+p {
+  margin: 0;
+  padding: 0; 
+}
+
+button {
+    border: none; 
+    padding: 0.75em;
+    cursor: pointer;
+    line-height: 1; 
+}
+
+.container {
+    min-width: 300px; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+/* Utility */
+.row {
+  display: flex; 
+}
+
+.hidden {
+display: none; 
+}
