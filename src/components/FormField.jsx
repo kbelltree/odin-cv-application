@@ -7,7 +7,7 @@ function FormField( { fieldItems }) {
                     <FormInput  
                         key={fieldItem.inputId}
                         labelText={fieldItem.labelText}
-                        id={fieldItem.inputId}
+                        inputId={fieldItem.inputId}
                         name={fieldItem.name}
                         type={fieldItem.type} 
                         value={fieldItem.value}
